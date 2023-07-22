@@ -70,7 +70,7 @@ quicksort(array, j + 1, hi, size);
 
 void quick_sort(int *array, size_t size)
 {
-if (array == NULL || size < 2)
+if (!array || size < 2)
 return;
 quicksort(array, 0, size - 1, size);
 }
