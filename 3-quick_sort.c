@@ -36,7 +36,6 @@ return j;
 s = array[i];
 array[i] = array[j];
 array[j] = s;
-print_array(array, size);
 }
 }
 
@@ -56,6 +55,7 @@ int j;
 if (lo >= 0 && hi >= 0 && lo < hi)
 {
 j = quick_partition(array, lo, hi, size);
+print_array(array, size);
 quicksort(array, lo, j, size);
 quicksort(array, j + 1, hi, size);
 }
