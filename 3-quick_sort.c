@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
-* quicksort -  sorts an array of integers in ascending order
+* quick_partition -  sorts an array of integers in ascending order
 * using the Quick sort algorithm.
 * @array: an array of element to be sort
 * @lo: low number of value
@@ -10,12 +10,13 @@
 * Return: the index of the hight value
 */
 
-int quick_partition(int *array, int lo, int hi, int size)
+int quick_partition(int *array, int lo, int hi)
 {
 int a = truncf(((hi - lo) / 2) + lo);
 int piv = array [a];
 int i = lo - 1;
 int s, j;
+
 j = hi + 1;
 s = 0;
 while(1)
