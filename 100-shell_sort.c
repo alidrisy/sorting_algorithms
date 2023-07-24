@@ -13,7 +13,7 @@ int k, s, i, x, gap;
 i = size;
 gap = 1;
 
-while (gap < size/3)
+while (gap < (int) size/3)
 gap = gap * 3 + 1;
 
 while (gap > 0)
