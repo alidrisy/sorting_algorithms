@@ -10,10 +10,13 @@ void shell_sort(int *array, size_t size)
 {
 int k, s, i, x, gap;
 
+if (!array || size < 2)
+	return;
+
 i = size;
 gap = 1;
 
-while (gap < (int) size/3)
+while (gap < (int) size / 3)
 gap = gap * 3 + 1;
 
 while (gap > 0)
