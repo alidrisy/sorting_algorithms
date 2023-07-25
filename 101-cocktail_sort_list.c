@@ -27,7 +27,7 @@ ne = new->next;
 if (new->n > ne->n)
 {
 swap(&new, list);
- print_list(*list);
+print_list(*list);
 x = 1;
 }
 new = new->next;
