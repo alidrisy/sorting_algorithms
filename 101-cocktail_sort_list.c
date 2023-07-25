@@ -9,7 +9,7 @@ void swap(listint_t **node, listint_t **list);
 
 void cocktail_sort_list(listint_t **list)
 {
-listint_t *new, *ne, *next;
+listint_t *new, *ne;
 int x = 1;
 
 ne = NULL;
@@ -49,7 +49,7 @@ new = new->prev;
 
 /**
 * swap - swap tow nodes of doubly linked list
-* @node: pointer to the node 
+* @node: pointer to the node
 * @list: pointer to doubly linked list
 */
 
