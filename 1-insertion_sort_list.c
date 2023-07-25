@@ -48,7 +48,7 @@ ne = ne->next;
 
 /**
 * swap - swap tow nodes of doubly linked list
-* @node: pointer to the node 
+* @node: pointer to the node
 * @list: pointer to doubly linked list
 */
 
