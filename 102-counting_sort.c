@@ -11,6 +11,9 @@ void counting_sort(int *array, size_t size)
 int i, x, v, s;
 int *output, *count;
 
+if (!array || size < 2)
+return;
+
 s = size;
 v = 1;
 output = malloc(sizeof(int) * size);
@@ -42,7 +45,7 @@ count[x] = count[x] - 1;
 output[count[x]] = array[i];
 }
 
-for(i = 0; i < s; i++)
+for (i = 0; i < s; i++)
 array[i] = output[i];
 
 free(output);
