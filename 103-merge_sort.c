@@ -15,7 +15,7 @@ void merge_sort(int *array, size_t size)
 {
 int *arcopy;
 int i;
- 
+
 arcopy = malloc(sizeof(int) * size);
 for (i = 0; i < (int) size; i++)
 arcopy[i] = array[i];
@@ -74,8 +74,8 @@ printf("\n");
 
 /**
 * merge -  merge subarrays
-* @A: an array of element to be sort
-* @B: a copy of the array of element to be sort
+* @array: an array of element to be sort
+* @arcopy: a copy of the array of element to be sort
 * @Begin: low number of value
 * @End: hight number of value
 * @Middle: Middle number of value
