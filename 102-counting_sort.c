@@ -20,7 +20,7 @@ if (array[i] > v)
 v = array[i];
 }
 
-count = malloc(sizeof(int) * (v + 1))
+count = malloc(sizeof(int) * (v + 1));
 for (i = 0; i <= v; i++)
 count[i] = 0;
 
