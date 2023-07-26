@@ -13,14 +13,14 @@ int *output, *count;
 
 s = size;
 v = 1;
-output = malloc(sizeof(size));
+output = malloc(sizeof(int) * size);
 for (i = 0; i < s; i++)
 {
 if (array[i] > v)
 v = array[i];
 }
 
-count = malloc(sizeof(v + 1));
+count = malloc(sizeof(int) * (v + 1))
 for (i = 0; i <= v; i++)
 count[i] = 0;
 
